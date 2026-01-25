@@ -1,0 +1,17 @@
+{
+  "name": "statisk-server",
+  "version": "1.0.0",
+  "description": "Statisk HTTP-server med Node.js",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test.js"
+  },
+  "dependencies": {
+    "ejs": "^4.0.1",
+    "express": "^5.2.1",
+    "nodemon": "^3.0.0"
+  },
+  "author": "",
+  "license": "ISC"
+}
