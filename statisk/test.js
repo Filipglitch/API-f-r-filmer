@@ -1,7 +1,5 @@
 /* console.log("Tests passed"); */
 
-const fetch = require("node-fetch");
-
 (async () => {
   const res = await fetch("http://localhost:5080/movies");
   const html = await res.text();
