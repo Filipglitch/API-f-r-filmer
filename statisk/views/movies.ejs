@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <title>Filmer</title>
+</head>
+<body>
+  <h1>Filmer</h1>
+
+<% movies.forEach(movie => { %>
+  <article>
+    <h2>
+      <a href="/movies/<%= movie.id %>">
+        <%= movie.attributes.title %>
+      </a>
+    </h2>
+
+    <% if (movie.attributes.image && movie.attributes.image.url) { %>
+      <img 
+        src="<%= movie.attributes.image.url %>" 
+        alt="<%= movie.attributes.title %>" 
+        width="200"
+      >
+    <% } %>
+  </article>
+<% }) %>
+
+
+</body>
+</html>

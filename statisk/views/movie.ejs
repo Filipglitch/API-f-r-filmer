@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <title><%= movie.attributes.title %></title>
+</head>
+<body>
+<h1><%= movie.attributes.title %></h1>
+<p><%= movie.attributes.intro %></p>
+
+<% if (movie.attributes.image && movie.attributes.image.url) { %>
+  <img src="<%= movie.attributes.image.url %>" width="300">
+<% } %>
+
+
+  <p><a href="/movies">Tillbaka</a></p>
+</body>
+</html>
